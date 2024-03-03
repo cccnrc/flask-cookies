@@ -18,8 +18,8 @@ You can also have a look at a live example of the banner [here](https://flask-co
 
 You have different options to install `Flask-Cookies`:
 1. [Python installation](#1-python-installation) (the easiest way)
-2. [Flask-Cookies installer](readme-ov-file#2-flask-cookies-installer)
-3. [Manual installation](readme-ov-file#3-manual-installation)
+2. [Flask-Cookies installer](#2-flask-cookies-installer)
+3. [Manual installation](#3-manual-installation)
 
 ## 1. Python installation
 Now, installation of Flask-Cookies can be easily done directly through [pip](https://pypi.org/project/pip/):

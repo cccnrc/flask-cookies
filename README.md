@@ -43,10 +43,15 @@ Now you can simply import the `Flask-Cookies` template from your base applicatio
 {% extends 'cookies/cookies.html' %}
 ```
 
-And you are completely set! Next time you run your application you have your nice cookie banner on it and directly connected with your Google Tag Manager account, from which you can easily manage and implement consent thorough your website without needing additional code modifications (have a look [here](https://support.google.com/tagmanager/answer/10718549?hl=en) to have an idea of how powerful GTM is)
+And you are completely set!
+Next time you run your application you have your nice cookie banner on it and directly connected with your Google Tag Manager account, from which you can easily manage and implement consent thorough your website without needing additional code modifications (have a look [here](https://support.google.com/tagmanager/answer/10718549?hl=en) to have an idea of how powerful GTM is)
 
 ## 2. Flask-Cookies Installer
-As you download `Flask-Cookies` you get a `installer.sh` file ([here](installer.sh)) which you can easily run in a `bash` shell with:
+Clone `Flask-Cookies` into your local machine:
+```
+git clone https://github.com/cccnrc/flask-cookies
+```
+You have a `installer.sh` file ([here](installer.sh)) which you can easily run in a `bash` shell with:
 ```
 bash installer.sh \
     --app-dir <flask-app-dir>

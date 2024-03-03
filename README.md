@@ -13,6 +13,7 @@ Flask-Cookies is extremely easy to install and immediately takes up the banner f
 Here is how then banner looks: ![screenshot of flask cookie banner](flask-cookies-banner.png)
 
 You can also have a look at a live example of the banner [here](https://flask-cookies-rpreview.tiiny.site)
+
 Please note: as we collapsed the whole thing in a single HTML document for this [live example](https://flask-cookies-rpreview.tiiny.site/), * *in some browser it might have some rendering problem* *. It should work on Firefox, Safari, Chrome, etc.
 
 You have different options to install `Flask-Cookies`:

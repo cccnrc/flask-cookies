@@ -22,7 +22,8 @@ You have different options to install `Flask-Cookies`:
 3. [Manual installation](#3-manual-installation)
 
 ## 1. Python installation
-Now, installation of Flask-Cookies can be easily done directly through [pip](https://pypi.org/project/pip/):
+Installation of [Flask-Cookies](https://pypi.org/project/flask-cookies/0.0.1/
+) can be easily done with [pip](https://pypi.org/project/pip/):
 ```
 pip install flask-cookies
 ```

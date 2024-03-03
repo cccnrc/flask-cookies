@@ -81,6 +81,7 @@ and you will have your cookie banner connected with your GTM account all set up
 You can manually install the files in needed positions. You simply need to:
 - copy `cookies.html` into your app `templates/` folder
 - copy `cookies.css` and `cookies-logo.png` into your app `static/` folder
+
 You will also need to replace `YOUR_GTM_ID` into `cookies.html` with your actual GTM ID in order to connect to it.
 Then you simply import this template from your base app template:
 ```

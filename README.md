@@ -57,9 +57,10 @@ bash installer.sh \
     --app-dir <flask-app-dir>
     --gtm-id <your-GTM-ID>
 ```
-You need to specify these two options above:
+You need to specify to the installer these two options above:
 1. `--app-dir`: the full path to your flask application directly
 2. `--gtm-id`: your Google Tag Manager ID
+
 ***important***: the installer assumes that your application structure is:
 ```
 app

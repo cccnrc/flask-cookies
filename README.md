@@ -26,12 +26,6 @@ Now, installation of Flask-Cookies can be easily done directly through [pip](htt
 ```
 pip install flask-cookies
 ```
-then you simply import it in your app initialization. Your app structure should be something similar to:
-```
-app
-└── __init__.py
-└── ... rest of files ...
-```
 Simply add these lines into your app `__init__.py` file:
 ```
 from flask_cookies import Cookies
@@ -39,8 +33,8 @@ from flask_cookies import Cookies
 cookies = Cookies(<put-your-GTM-ID-here>)
 
 app = Flask(__name__)
+
 cookies.init_app(app)
-### rest of your app configuration
 ```
 And that's all!
 

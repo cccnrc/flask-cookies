@@ -2,17 +2,17 @@
 
 Welcome to Flask-Cookies
 
-This is a python package that we developed to rapidly implement cookie banners within our [Flask](https://flask.palletsprojects.com/en/3.0.x/) based web applications.
+This is a little package that we developed to rapidly implement cookie banners within our [Flask](https://flask.palletsprojects.com/en/3.0.x/) based web applications in just 3 lines of code.
 
 This banner deal with cookies following [Google Tag Consent](https://support.google.com/tagmanager/?hl=en#topic=13562736) types, which are thoroughly explained [here](https://support.google.com/tagmanager/?hl=en#topic=) and in several other guides.
 
-Basically, if you want to, you can easily connect your [Google Tag Manager](https://tagmanager.google.com/) account to the banner, and directly work on consent and actions from your GTM console, with all the advantages and functionalities it offers.
+Basically, if you want to, you can easily connect your [Google Tag Manager](https://tagmanager.google.com/) account to the banner, and directly work on consent and actions from your GTM console, with all the advantages and functionalities it offers. You can create personalized events that users will trigger or not based on the consent they expressed etc. and easily visualize all these activities on your [Google Analytics](https://analytics.google.com/) account.
 
-Flask-Cookies is extremely easy to install and immediately takes up the banner for you in your Flask application.
+`Flask-Cookies` is *extremely easy* to install and immediately takes up the banner for you in your Flask application.
 
-Here is how then banner looks: ![screenshot of flask cookie banner](flask-cookies-banner.png)
+Here is an ***example*** of how then banner looks: ![screenshot of flask cookie banner](flask-cookies-banner.png)
 
-You can also have a look at a live example of the banner [here](https://flask-cookies-rpreview.tiiny.site)
+You can also have a look at a ***live example*** of the `Flask-Cookies` banner [here](https://flask-cookies-rpreview.tiiny.site)
 
 *Please note*: as we collapsed the whole thing in a single HTML document for this [live example](https://flask-cookies-rpreview.tiiny.site/), *in some browser it might have some rendering problem*. It should work on Firefox, Safari, Chrome, etc.
 
@@ -46,6 +46,12 @@ Now you can simply import the `Flask-Cookies` template from your base applicatio
 
 And you are completely set!
 Next time you run your application you have your nice cookie banner on it and directly connected with your Google Tag Manager account, from which you can easily manage and implement consent thorough your website without needing additional code modifications (have a look [here](https://support.google.com/tagmanager/answer/10718549?hl=en) to have an idea of how powerful GTM is)
+
+Please note: if you *don't* specify your GTM ID at `Cookies()` initialization you will see an error in your prompt:
+> You must pass your Google Tag Manager ID to Cookies() initialization or it will NOT be connected with your GTM account: "cookies = Cookies(<put-here-your-GTM-ID>)"
+
+---
+Here how many times `Flask-Cookies` python package has been downoaded: [![Downloads](https://static.pepy.tech/badge/flask-cookies)](https://pepy.tech/project/flask-cookies)
 
 ## 2. Flask-Cookies Installer
 Clone `Flask-Cookies` into your local machine:
@@ -90,5 +96,11 @@ Then you simply import this template from your base app template:
 ```
 And everything is set up and working!
 
+### Additional Informations
+
+- `Flask-Cookies` depends on [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) which will be imported in your website (precisely in [this page](cookies.html), lines 44). Thus if your flask application rely on a different Bootsrap version (or fore some strange reason you do not want to import it), you have to manually change these imports and `Flask-Cookies` objects relying on it.
+- you can easily modify everything in `Flask-Cookies` banner, simply change required fields in [cookies.html](cookies.html) and [cookies.css](cookies.css). If you installed `Flask-Cookies` as a Python library you will find these files in `$PYTHONPATH/lib/python3/site-packages/flask_cookies/templates/cookies/` and `$PYTHONPATH/lib/python3/site-packages/flask_cookies/static/` (have a look [here](https://stackoverflow.com/questions/16269903/how-to-get-the-pythonpath-in-shell) for info on `$PYTHONPATH`)
+
+### Closing Notes
 
 Feel free to use `Flask-Cookies` and all your applications and to modify its files as you need (but share with us improvements so we can share them with the world).
